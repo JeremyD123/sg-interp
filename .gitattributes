@@ -41,7 +41,8 @@
 *.svg binary
 #*.svg text
 *.eps binary
-
+*.exe binary
+*.num binary
 
 
 # Basic .gitattributes for a MATLAB repo.
@@ -71,3 +72,4 @@
 *.mlappinstall  binary
 *.mlpkginstall  binary
 *.mn 		binary
+
