@@ -41,9 +41,14 @@
 *.svg binary
 #*.svg text
 *.eps binary
+
+# Other Binaries
 *.exe binary
 *.num binary
-
+*.xls binary
+*.xlsx binary
+*.XLS binary
+*.XLSX binary
 
 # Basic .gitattributes for a MATLAB repo.
 # This template includes Simulink and MuPAD extensions, in addition
