@@ -22,19 +22,6 @@ function y = testderivatives(varargin)
 %    testderivatives(0.5, 0.5, 1, 2, [2, 5.25], [0.2, 0.7])
 %
 %    See also TESTFUNCTIONS. 
- 
-% Author : Andreas Klimke, Universitaet Stuttgart
-% Version: 1.0
-% Date   : July 11, 2006
-
-% ------------------------------------------------------------
-% Sparse Grid Interpolation Toolbox
-% Copyright (c) 2006 W. Andreas Klimke, Universitaet Stuttgart 
-% Copyright (c) 2007-2008 W. A. Klimke. All Rights Reserved.
-% See LICENSE.txt for license. 
-% email: klimkeas@ians.uni-stuttgart.de
-% web  : http://www.ians.uni-stuttgart.de/spinterp
-% ------------------------------------------------------------
 
 dxdir = varargin{end-3};
 type = varargin{end-2};

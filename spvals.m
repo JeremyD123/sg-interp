@@ -23,48 +23,6 @@ function z = spvals(f, d, range, options, varargin)
 %
 %    See also SPGRID, SPVALS, SPSET, SPDIM. 
 
-% Author : Andreas Klimke
-% Version: 1.9
-% Date   : November 18, 2007
-
-% Change log:
-% V1.0   : September 24, 2003
-%          Initial version
-% V1.1   : January 27, 2004
-%          Corrected bug with PrevResults option- now correctly
-%          uses previously computed results. Added "KeepGrid" and
-%          "KeepFunctionValues" options for later use.
-% V1.2   : April 22, 2004
-%          Added possibility for dimension-adaptive grids.
-% V1.3   : June 15, 2004
-%          Added Chebyshev grid.
-% V1.4   : March 10, 2005
-%          Added processing of sparse index arrays. This
-%          significantly improves the computational complexity for
-%          higher-dimensional sparse grids.
-% V1.5   : June 12, 2005
-%          Corrected bug regarding grid scaling w/ non-sparse
-%          indices (forgot to update code accordingly).
-% V1.6   : September 02, 2005
-%          Altered structure assignment to avoid warning in new 
-%          Matlab release R14SP2. 
-% V1.7   : September 05, 2005
-%          Removed bug with levelseq initialization in case of sparse
-%          index sets.
-% V1.8   : February 2, 2006
-%          Added DropTol processing
-% V1.9   : November 18, 2007
-%          Added new grid type : Gauss-Patterson
-	
-% ------------------------------------------------------------
-% Sparse Grid Interpolation Toolbox
-% Copyright (c) 2006 W. Andreas Klimke, Universitaet Stuttgart 
-% Copyright (c) 2007-2008 W. A. Klimke. All Rights Reserved.
-% See LICENSE.txt for license. 
-% email: klimkeas@ians.uni-stuttgart.de
-% web  : http://www.ians.uni-stuttgart.de/spinterp
-% ------------------------------------------------------------
-
 % Ensure that d is of type uint16
 d = uint16(d);
 

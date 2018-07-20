@@ -35,53 +35,6 @@ function [xopt,fval,exitflag,output] = spcompsearch(z, xbox, options)
 %       [xopt, fval] = spcompsearch(z)
 %
 %    See also SPOPTIMSET.
- 
-% Author : Andreas Klimke
-% Version: 2.1
-% Date   : September 1, 2007
-	
-% Change log:
-% V2.1 : September 1, 2007
-%        Changed calling syntax to match other optimization
-%        methods. Added maximum number of iterations.
-% V2.0 : January 23, 2006
-%        Added TolFun break criterium.
-% V1.9 : June 9, 2005
-%        Removed multiple start processing from V1.5; moved to
-%        separate routine SPMULTISTART. Removed start point
-%        computation; moved to separate routine.
-% V1.8 : April 15, 2005
-%        Corrected bug concerning testCorners option; Modified
-%        slightly to cope with new dimension-adaptive format.
-% V1.7 : January 14, 2005
-%        Corrected bug that lead to wrong rescaling of parts of the
-%        grid data if previous results were used.
-% V1.6 : January 11, 2005
-%        Added capability for handling polynomial sparse grid
-%        interpolants. Added tolerance on X as options.
-% V1.5 : November 13, 2004
-%        Added feature for performing multiple searches at a time.
-% V1.4 : September 6, 2004
-%        Added capability for handling dimension-adaptive data.
-% V1.3 : September 6, 2004
-%      : Added check if the spvals structure contains a valid
-%        range; otherwise, set it to [0,1]^d.
-% V1.2 : March 9, 2004
-%        Added random start point option
-% V1.1 : February 18, 2004
-%        Moved search for optimum of sparse grid points to separate
-%        routine (spfindopt.m).
-% V1.0 : January 7, 2004
-%        Initial version	       
-	
-% ------------------------------------------------------------
-% Sparse Grid Interpolation Toolbox
-% Copyright (c) 2006 W. Andreas Klimke, Universitaet Stuttgart 
-% Copyright (c) 2007-2008 W. A. Klimke. All Rights Reserved.
-% See LICENSE.txt for license. 
-% email: klimkeas@ians.uni-stuttgart.de
-% web  : http://www.ians.uni-stuttgart.de/spinterp
-% ------------------------------------------------------------
 
 t0 = clock;
 

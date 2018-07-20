@@ -6,19 +6,6 @@ function spdemo
 %
 %    See also SPINTERP, SPVALS.
 
-% Author : Andreas Klimke, Universität Stuttgart
-% Version: 1.1
-% Date   : September 29, 2003
-
-% ------------------------------------------------------------
-% Sparse Grid Interpolation Toolbox
-% Copyright (c) 2006 W. Andreas Klimke, Universitaet Stuttgart 
-% Copyright (c) 2007-2008 W. A. Klimke. All Rights Reserved.
-% See LICENSE.txt for license. 
-% email: klimkeas@ians.uni-stuttgart.de
-% web  : http://www.ians.uni-stuttgart.de/spinterp
-% ------------------------------------------------------------
-
 % Some function f
 f = inline('1./((x*2-0.3).^4 +(y*3-0.7).^2+1)');
 

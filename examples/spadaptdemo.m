@@ -6,19 +6,6 @@ function z = spadaptdemo
 %
 %    See also SPINTERP, SPVALS.
 
-% Author : Andreas Klimke, Universitaet Stuttgart
-% Version: 1.1
-% Date   : September 29, 2003
-
-% ------------------------------------------------------------
-% Sparse Grid Interpolation Toolbox
-% Copyright (c) 2006 W. Andreas Klimke, Universitaet Stuttgart 
-% Copyright (c) 2007-2008 W. A. Klimke. All Rights Reserved.
-% See LICENSE.txt for license. 
-% email: klimkeas@ians.uni-stuttgart.de
-% web  : http://www.ians.uni-stuttgart.de/spinterp
-% ------------------------------------------------------------
-
 % The Branin function is used here
 f = inline(['(5/pi*x-5.1/(4*pi^2)*x.^2+y-6).^2 + 10*(1-1/(8*pi))*' ...
 	    ' cos(x)+10']); 

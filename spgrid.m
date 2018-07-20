@@ -12,31 +12,6 @@ function x = spgrid(n,d,options)
 %
 %    See also SPINTERP, SPVALS, SPDIM.
 	
-% Author : Andreas Klimke
-% Version: 1.3
-% Date   : November 18, 2007
-
-% Change log:
-% V1.0   : September 24, 2003
-%          Initial version
-% V1.1   : April 20, 2004
-%          Compute sequence of levels here instead of in spgridxx
-%          subroutine. 
-% V1.2   : June 15, 2004
-%          Added new grid type : Chebyshev distributed nodes
-%          (at the extrema of the Chebyshev polynomials)
-% V1.3   : November 18, 2007
-%          Added new grid type : Gauss-Patterson
-
-% ------------------------------------------------------------
-% Sparse Grid Interpolation Toolbox
-% Copyright (c) 2006 W. Andreas Klimke, Universitaet Stuttgart 
-% Copyright (c) 2007-2008 W. A. Klimke. All Rights Reserved.
-% See LICENSE.txt for license. 
-% email: klimkeas@ians.uni-stuttgart.de
-% web  : http://www.ians.uni-stuttgart.de/spinterp
-% ------------------------------------------------------------
-	
 if nargin < 3, options = []; end
 if nargin < 2, d = []; end
 

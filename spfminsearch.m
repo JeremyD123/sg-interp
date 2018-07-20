@@ -44,26 +44,6 @@ function [xopt,fval,exitflag,output] = spfminsearch(z, xbox, options)
 %
 %    See also SPOPTIMSET, FMINSEARCH.
 
-% Author : Andreas Klimke
-% Version: 1.1
-% Date   : June 8, 2005
-
-% Change log:
-% V1.1   : September 8, 2006
-%          Added example, added exitflag, added output from
-%          fminsearch, removed obsolete code segments.
-% V1.0   : June 8, 2005
-%          Initial version.
-	
-% ------------------------------------------------------------
-% Sparse Grid Interpolation Toolbox
-% Copyright (c) 2006 W. Andreas Klimke, Universitaet Stuttgart 
-% Copyright (c) 2007-2008 W. A. Klimke. All Rights Reserved.
-% See LICENSE.txt for license. 
-% email: klimkeas@ians.uni-stuttgart.de
-% web  : http://www.ians.uni-stuttgart.de/spinterp
-% ------------------------------------------------------------
-
 t0 = clock;
 
 if nargin < 2, xbox = []; end;

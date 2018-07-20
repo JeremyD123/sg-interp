@@ -36,55 +36,6 @@ function [ip, ipder] = spinterp(z, varargin)
 %       [f_interp, f_ipgrad] = spinterp(z, [0.5, 0.2, 0.2])
 %
 %    See also SPGRID, SPVALS, SPSET, SPDIM. 
-	
-% Author : Andreas Klimke, Universitaet Stuttgart
-% Version: 1.8
-% Date   : March 3, 2007
-
-% Change log:
-% V1.0   : September 23, 2003
-%          Initial version
-% V1.1   : January 27, 2004
-%          Added some new options that can be specified using
-%          optional structure fields in z. With the selectOutput
-%          field, the desired output argument can be specified
-%          (this applies to interpolants of functions with several
-%          output variables). See SPDEMOVAROUT for a
-%          demonstration.
-% V1.2   : June 15, 2004
-%          Added new grid type and high degree polynomial
-%          interpolation at the Chebyshev distributed nodes
-%          (at the extrema of the Chebyshev polynomials).
-% V1.3   : March 10, 2005
-%          Added processing of sparse index arrays. This
-%          significantly improves the computational complexity for
-%          higher-dimensional sparse grids.
-% V1.4   : February 4, 2006
-%          Added drop tolerance processing.
-% V1.5   : June 22, 2006
-%          Added derivative computation capability.
-% V1.6   : September 8, 2006
-%          Fixed bug when calling spinterp in undocumented
-%          vectorized form when z is computed for default
-%          range (required by spsurfun).
-% V1.7   : October 28, 2006
-%          Added support of calling spinterp with a single matrix
-%          (special thanks to Daniel Harenberg for the suggestion 
-%          and the provided code).
-% V1.8   : March 3, 2007
-%          Fixed bug in gradient computation that caused a wrong
-%          scaling of derivatives where range intervals were
-%          not equal to one (problem found and solved by Katrin 
-%          Grau).
-
-% ------------------------------------------------------------
-% Sparse Grid Interpolation Toolbox
-% Copyright (c) 2006 W. Andreas Klimke, Universitaet Stuttgart 
-% Copyright (c) 2007-2008 W. A. Klimke. All Rights Reserved.
-% See LICENSE.txt for license. 
-% email: klimkeas@ians.uni-stuttgart.de
-% web  : http://www.ians.uni-stuttgart.de/spinterp
-% ------------------------------------------------------------
 
 gridtype = z.gridType;
 d = z.d;

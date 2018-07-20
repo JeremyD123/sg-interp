@@ -18,31 +18,6 @@ function o = spoptimget(options,name,default,flag)
 %   See also SPOPTIMSET, SPCOMPSEARCH, SPFMINSEARCH, SPCGSEARCH,
 %            SPMULTISTART
 
-% Author : Andreas Klimke
-% Version: 1.2
-% Date   : November 13, 2006
-
-% Change log:
-% V1.2   : November 13, 2006
-%          Cleaned up options.
-% V1.1   : August 8, 2005
-%          Added BisectGap and funTol parameters
-% V1.0   : June 9, 2005
-%          Initial version
-
-% Note: SPOPTIMGET is similar in syntax and code to the options
-% handling with ODEGET and ODESET of the MATLAB ODE suite by Marc
-% Reichelt and Lawrence Shampine.
-
-% ------------------------------------------------------------
-% Sparse Grid Interpolation Toolbox
-% Copyright (c) 2006 W. Andreas Klimke, Universitaet Stuttgart 
-% Copyright (c) 2007-2008 W. A. Klimke. All Rights Reserved.
-% See LICENSE.txt for license. 
-% email: klimkeas@ians.uni-stuttgart.de
-% web  : http://www.ians.uni-stuttgart.de/spinterp
-% ------------------------------------------------------------
-
 % undocumented usage for fast access with no error checking
 if (nargin == 4) & isequal(flag,'fast')
    o = getknownfield(options,name,default);

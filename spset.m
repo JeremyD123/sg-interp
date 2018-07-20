@@ -186,15 +186,6 @@ function options = spset(varargin)
 %          Added new parameter for dimensional adaptivity degree
 %          strategy.
 
-% ------------------------------------------------------------
-% Sparse Grid Interpolation Toolbox
-% Copyright (c) 2006 W. Andreas Klimke, Universitaet Stuttgart 
-% Copyright (c) 2007-2008 W. A. Klimke. All Rights Reserved.
-% See LICENSE.txt for license. 
-% email: klimkeas@ians.uni-stuttgart.de
-% web  : http://www.ians.uni-stuttgart.de/spinterp
-% ------------------------------------------------------------
-
 % Note: SPSET is similar in syntax and code the the options
 % handling with ODEGET and ODESET of the MATLAB ODE suite by Marc
 % Reichelt and Lawrence Shampine.

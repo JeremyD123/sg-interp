@@ -10,26 +10,6 @@ function varargout = plotgrid(n,d,options)
 %
 %    H = PLOTGRID(...) Returns a vector of handles to the grid points
 %    (useful for changing the look of the plotted grid).  
-
-% Author : Andreas Klimke, Universität Stuttgart
-% Version: 1.2
-
-% Change log:
-% V1.0   : September 20, 2003
-%          Initial version.
-% V1.1   : September 02, 2005
-%          Changed output of function to varargout.
-% V1.2   : December 23, 2005
-%          Removed varargout bug and added comment for handles.
-
-% ------------------------------------------------------------
-% Sparse Grid Interpolation Toolbox
-% Copyright (c) 2006 W. Andreas Klimke, Universitaet Stuttgart 
-% Copyright (c) 2007-2008 W. A. Klimke. All Rights Reserved.
-% See LICENSE.txt for license. 
-% email: klimkeas@ians.uni-stuttgart.de
-% web  : http://www.ians.uni-stuttgart.de/spinterp
-% ------------------------------------------------------------
 	
 if nargin ~= 2 && nargin ~= 3
 	error(['Wrong number of arguments. Please see ''help plotgrid''' ...

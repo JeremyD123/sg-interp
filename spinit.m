@@ -1,19 +1,6 @@
 function spinit
 % SPINIT   Add the sparse grid routines directories to Matlab path
 
-% Author : Andreas Klimke, Universitaet Stuttgart
-% Date   : October 8, 2007
-% Version: 1.6
-
-% ------------------------------------------------------------
-% Sparse Grid Interpolation Toolbox
-% Copyright (c) 2006 W. Andreas Klimke, Universitaet Stuttgart 
-% Copyright (c) 2007-2008 W. A. Klimke. All Rights Reserved.
-% See LICENSE.txt for license. 
-% email: klimkeas@ians.uni-stuttgart.de
-% web  : http://www.ians.uni-stuttgart.de/spinterp
-% ------------------------------------------------------------
-
 try
 	disp('------------------------------------------------------------------------------');
 	disp('Sparse Grid Interpolation Toolbox');

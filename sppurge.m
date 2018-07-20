@@ -15,25 +15,6 @@ function z = sppurge(z, options)
 %    by the purging algorithm.
 %
 %    See also: SPSET
-	
-% Author : Andreas Klimke
-% Version: 1.1
-% Date   : December 4, 2007
-
-% Change log:
-% V1.0   : February 1, 2006
-%          Initial version
-% V1.1   : December 4, 2007
-%          Added Gauss-Patterson grid.
-
-% ------------------------------------------------------------
-% Sparse Grid Interpolation Toolbox
-% Copyright (c) 2006 W. Andreas Klimke, Universitaet Stuttgart 
-% Copyright (c) 2007-2008 W. A. Klimke. All Rights Reserved.
-% See LICENSE.txt for license. 
-% email: klimkeas@ians.uni-stuttgart.de
-% web  : http://www.ians.uni-stuttgart.de/spinterp
-% ------------------------------------------------------------
 
 if nargin > 1
   % New user-demanded drop tolerance

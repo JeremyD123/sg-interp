@@ -13,19 +13,6 @@ function timespvals(options, n, d)
 %
 %    See also SPSET, SPVALS, TESTFUNCTIONS.
 
-% Author : Andreas Klimke, Universitaet Stuttgart
-% Version: 1.6
-% Date   : May 31, 2006
-
-% ------------------------------------------------------------
-% Sparse Grid Interpolation Toolbox
-% Copyright (c) 2006 W. Andreas Klimke, Universitaet Stuttgart 
-% Copyright (c) 2007-2008 W. A. Klimke. All Rights Reserved.
-% See LICENSE.txt for license. 
-% email: klimkeas@ians.uni-stuttgart.de
-% web  : http://www.ians.uni-stuttgart.de/spinterp
-% ------------------------------------------------------------
-
 if nargin < 1, options = []; end
 if nargin < 2, n = []; d = []; end
 

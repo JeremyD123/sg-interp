@@ -14,25 +14,6 @@ function q = spquad(z)
 %       error = abs(F_exact - F_quad)
 %
 %    See also SPVALS. 
-
-% ------------------------------------------------------------
-% Sparse Grid Interpolation Toolbox
-% Copyright (c) 2006 W. Andreas Klimke, Universitaet Stuttgart 
-% Copyright (c) 2007-2008 W. A. Klimke. All Rights Reserved.
-% See LICENSE.txt for license. 
-% email: klimkeas@ians.uni-stuttgart.de
-% web  : http://www.ians.uni-stuttgart.de/spinterp
-% ------------------------------------------------------------
-	
-% Author : Andreas Klimke, Universitaet Stuttgart
-% Version: 1.1
-% Date   : November 13, 2007
-
-% Change log:
-% V1.0   : May 04, 2004
-%          Initial version
-% v1.1   : November 13, 2007
-%          Reorganized to use weights functions
 	
 gridtype = z.gridType;
 d = z.d;

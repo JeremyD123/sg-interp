@@ -93,15 +93,6 @@ function options = spoptimset(varargin)
 % handling with ODEGET and ODESET of the MATLAB ODE suite by Marc
 % Reichelt and Lawrence Shampine.
 
-% ------------------------------------------------------------
-% Sparse Grid Interpolation Toolbox
-% Copyright (c) 2006 W. Andreas Klimke, Universitaet Stuttgart 
-% Copyright (c) 2007-2008 W. A. Klimke. All Rights Reserved.
-% See LICENSE.txt for license. 
-% email: klimkeas@ians.uni-stuttgart.de
-% web  : http://www.ians.uni-stuttgart.de/spinterp
-% ------------------------------------------------------------
-
 % Print out possible values of properties.
 if (nargin == 0) & (nargout == 0)
   fprintf('          Minimize: [ {on} | off ]\n');

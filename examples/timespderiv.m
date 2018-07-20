@@ -33,20 +33,7 @@ function timespderiv(options, flags)
 %       flags = struct('absoluteTime', 'on');
 %       timespderiv(spset('GridType','Chebyshev'), flags); 
 % 
-%    See also SPSET, SPINTERP, TESTFUNCTIONS.  
-
-% Author : Andreas Klimke, Universitaet Stuttgart
-% Version: 1.0
-% Date   : July 8, 2006
-
-% ------------------------------------------------------------
-% Sparse Grid Interpolation Toolbox
-% Copyright (c) 2006 W. Andreas Klimke, Universitaet Stuttgart 
-% Copyright (c) 2007-2008 W. A. Klimke. All Rights Reserved.
-% See LICENSE.txt for license. 
-% email: klimkeas@ians.uni-stuttgart.de
-% web  : http://www.ians.uni-stuttgart.de/spinterp
-% ------------------------------------------------------------
+%    See also SPSET, SPINTERP, TESTFUNCTIONS.
 
 if nargin < 1, options = []; end
 if nargin < 2, flags = []; end

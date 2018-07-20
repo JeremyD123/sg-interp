@@ -38,19 +38,6 @@ function y = testfunctions(varargin)
 %    [X,Y] = meshgrid(x,x);
 %    surf(X,Y, ...
 %      testfunctions(X, Y, 'product peak', [2, 5.25], [0.2 0.7]));
- 
-% Author : Andreas Klimke, Universitaet Stuttgart
-% Version: 1.0
-% Date   : August 2, 2003
-
-% ------------------------------------------------------------
-% Sparse Grid Interpolation Toolbox
-% Copyright (c) 2006 W. Andreas Klimke, Universitaet Stuttgart 
-% Copyright (c) 2007-2008 W. A. Klimke. All Rights Reserved.
-% See LICENSE.txt for license. 
-% email: klimkeas@ians.uni-stuttgart.de
-% web  : http://www.ians.uni-stuttgart.de/spinterp
-% ------------------------------------------------------------
 
 type = varargin{end-2};
 c = varargin{end-1};

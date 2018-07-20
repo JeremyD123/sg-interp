@@ -1,28 +1,6 @@
 function seq = spgetseq(n,d,options)
 % SPGETSEQ  Compute the sets of indices 
 %    (internal function)
-
-% Author : Andreas Klimke, Universitaet Stuttgart
-% Version: 1.1
-% Date   : November 18, 2007
-
-% Change log:
-% V1.0   : August 5, 2003
-%          Initial release
-% V1.1   : January 24, 2006
-%          Changed algorithm to operate on a uint8 rather than
-%          a double array.
-% V1.2   : November 18, 2007
-%          Added new grid type : Gauss-Patterson
-
-% ------------------------------------------------------------
-% Sparse Grid Interpolation Toolbox
-% Copyright (c) 2006 W. Andreas Klimke, Universitaet Stuttgart 
-% Copyright (c) 2007-2008 W. A. Klimke. All Rights Reserved.
-% See LICENSE.txt for license. 
-% email: klimkeas@ians.uni-stuttgart.de
-% web  : http://www.ians.uni-stuttgart.de/spinterp
-% ------------------------------------------------------------
 	
 % Examples:
 % For dimension 2, level n = 3, the sequence is

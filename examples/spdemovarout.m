@@ -3,19 +3,6 @@ function spdemovarout
 %    Sparse grid interpolation demo for a function with multiple 
 %    output parameters and non-vectorized processing. In this case, 
 %    we use the Maximum-norm-based grid.
-	
-% Author : Andreas Klimke, Universitaet Stuttgart
-% Date   : January 27, 2004
-% Version: 1.3
-	
-% ------------------------------------------------------------
-% Sparse Grid Interpolation Toolbox
-% Copyright (c) 2006 W. Andreas Klimke, Universitaet Stuttgart 
-% Copyright (c) 2007-2008 W. A. Klimke. All Rights Reserved.
-% See LICENSE.txt for license. 
-% email: klimkeas@ians.uni-stuttgart.de
-% web  : http://www.ians.uni-stuttgart.de/spinterp
-% ------------------------------------------------------------
 
 % Define problem dimension
 d = 2;

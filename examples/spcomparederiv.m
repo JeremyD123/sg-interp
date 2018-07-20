@@ -7,19 +7,6 @@ function spcomparederiv
 %
 %    See also SPINTERP, TESTDERIVATIVES.
 
-% Author : Andreas Klimke, Universitaet Stuttgart
-% Version: 1.0
-% Date   : July 12, 2006
-
-% ------------------------------------------------------------
-% Sparse Grid Interpolation Toolbox
-% Copyright (c) 2006 W. Andreas Klimke, Universitaet Stuttgart 
-% Copyright (c) 2007-2008 W. A. Klimke. All Rights Reserved.
-% See LICENSE.txt for license. 
-% email: klimkeas@ians.uni-stuttgart.de
-% web  : http://www.ians.uni-stuttgart.de/spinterp
-% ------------------------------------------------------------
-
 % Dimension of the test functions
 d = 3;
 

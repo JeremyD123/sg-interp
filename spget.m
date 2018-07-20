@@ -17,39 +17,6 @@ function o = spget(options,name,default,flag)
 %   
 %   See also SPSET, SPINTERP, SPVALS.
 
-% Author : Andreas Klimke, Universitaet Stuttgart
-% Version: 1.5
-% Date   : March 1, 2006
-
-% Change log:
-% V1.0   : September 23, 2003
-%          Initial version
-% V1.1   : January 27, 2004
-%          Added "KeepGrid" and "KeepFunctionValues" options for
-%          later use. 
-% V1.2   : Apr 22, 2004
-%          Added options for dimension-adaptive sparse grids.
-% V1.3   : Feb 22, 2005
-%          Added handling of sparse sets of indices (useful for
-%          high-dimensional interpolation)
-% V1.4   : Feb 2, 2006
-%          Added droptol property
-% V1.5   : March 1, 2006
-%          Added EnableFFT feature
-
-% Note: SPGET is similar in syntax and code to the options
-% handling with ODEGET and ODESET of the MATLAB ODE suite by Marc
-% Reichelt and Lawrence Shampine.
-
-% ------------------------------------------------------------
-% Sparse Grid Interpolation Toolbox
-% Copyright (c) 2006 W. Andreas Klimke, Universitaet Stuttgart 
-% Copyright (c) 2007-2008 W. A. Klimke. All Rights Reserved.
-% See LICENSE.txt for license. 
-% email: klimkeas@ians.uni-stuttgart.de
-% web  : http://www.ians.uni-stuttgart.de/spinterp
-% ------------------------------------------------------------
-
 % undocumented usage for fast access with no error checking
 if (nargin == 4) && isequal(flag,'fast')
    o = getknownfield(options,name,default);
