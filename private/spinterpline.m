@@ -19,15 +19,6 @@ function [ip,ipgrad] = spinterpline(z,p,xdir,x)
 %       x = linspace(0,1,6);
 %       f_interp = spinterpline(z, p, xdir, x)
 
-% ------------------------------------------------------------
-% Sparse Grid Interpolation Toolbox
-% Copyright (c) 2006 W. Andreas Klimke, Universitaet Stuttgart 
-% Copyright (c) 2007-2008 W. A. Klimke. All Rights Reserved.
-% See LICENSE.txt for license. 
-% email: klimkeas@ians.uni-stuttgart.de
-% web  : http://www.ians.uni-stuttgart.de/spinterp
-% ------------------------------------------------------------
-
 % Make p a column vector
 p = p(:);   
 

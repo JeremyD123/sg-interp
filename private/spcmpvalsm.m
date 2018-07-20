@@ -1,26 +1,6 @@
 function ip = spcmpvalsm(d,z,y,newlevelseq,levelseq)
 % SPCMPVALSM   Compute hierarchical surpluses, maximum-norm grid
 %    (internal function)
-	
-% Author : Andreas Klimke, Universitaet Stuttgart
-% Version: 1.2
-% Date   : January 24, 2006
-	
-% Version history:
-% V1.1, June 9, 2005 : Corrected bug, inititialization of
-%       nnewpoints used command 'size' instead of 'zeros'.
-% V1.0, Jul 14, 2004 : Initial release.
-% V1.2   : January 24, 2006
-%          Changed data types to operate on uint arrays
-
-% ------------------------------------------------------------
-% Sparse Grid Interpolation Toolbox
-% Copyright (c) 2006 W. Andreas Klimke, Universitaet Stuttgart 
-% Copyright (c) 2007-2008 W. A. Klimke. All Rights Reserved.
-% See LICENSE.txt for license. 
-% email: klimkeas@ians.uni-stuttgart.de
-% web  : http://www.ians.uni-stuttgart.de/spinterp
-% ------------------------------------------------------------
 
 ninterp = uint32(size(y,1));
 ip = zeros(ninterp,1);

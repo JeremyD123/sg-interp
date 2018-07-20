@@ -4,25 +4,6 @@ function z = reordervals(z, seq, fromindex, toindex)
 %    that the dimensions which have a higher number of support nodes 
 %    come first. (Internal function)
 
-% Author : Andreas Klimke, Universitaet Stuttgart
-% Date   : January 24, 2006
-% Version: 1.1
-
-% Change log:
-% V1.0   : July 7, 2004
-%          Initial version
-% V1.1   : January 24, 2006
-%          Changed data types to operate on uint arrays
-
-% ------------------------------------------------------------
-% Sparse Grid Interpolation Toolbox
-% Copyright (c) 2006 W. Andreas Klimke, Universitaet Stuttgart 
-% Copyright (c) 2007-2008 W. A. Klimke. All Rights Reserved.
-% See LICENSE.txt for license. 
-% email: klimkeas@ians.uni-stuttgart.de
-% web  : http://www.ians.uni-stuttgart.de/spinterp
-% ------------------------------------------------------------
-
 % This reordering results in a slight performance gain, since the
 % inner loops always have a higher number of iterations compared to
 % the outer loops.

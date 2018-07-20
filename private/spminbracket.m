@@ -2,15 +2,6 @@ function [xbrac, fxbrac, bflag, x, fx, fxgrad, nfevals] = ...
   spminbracket(z,x,fx,fxgrad,xdir,xbox,options,stepsize)
 % Find a bracket enclosing a local minimizer (internal function) 
 
-% ------------------------------------------------------------
-% Sparse Grid Interpolation Toolbox
-% Copyright (c) 2006 W. Andreas Klimke, Universitaet Stuttgart 
-% Copyright (c) 2007-2008 W. A. Klimke. All Rights Reserved.
-% See LICENSE.txt for license. 
-% email: klimkeas@ians.uni-stuttgart.de
-% web  : http://www.ians.uni-stuttgart.de/spinterp
-% ------------------------------------------------------------
-
 if nargin < 7, options = []; end
 if nargin < 8, stepsize = []; end
 

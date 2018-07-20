@@ -3,27 +3,6 @@ function [ipder] = ppderiv(ipder, ipder2, maxlev, y)
 %    derivatives to one via linear interpolation.
 %    (internal function)
 
-% Author : Andreas Klimke, Universitaet Stuttgart
-% Version: 1.0
-% Date   : July 1, 2006
-
-% Change log:
-% V1.1   : October 7, 2007
-%          Fixed derivative computation such that when there
-%          is a sign change, the derivative value is zero at
-%          the grid point (important for optimization).
-% V1.0   : July 1, 2006
-%          Initial version
-
-% ------------------------------------------------------------
-% Sparse Grid Interpolation Toolbox
-% Copyright (c) 2006 W. Andreas Klimke, Universitaet Stuttgart 
-% Copyright (c) 2007-2008 W. A. Klimke. All Rights Reserved.
-% See LICENSE.txt for license. 
-% email: klimkeas@ians.uni-stuttgart.de
-% web  : http://www.ians.uni-stuttgart.de/spinterp
-% ------------------------------------------------------------
-
 d = size(y,2);
 ninterp = uint32(size(y,1));
 

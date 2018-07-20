@@ -17,23 +17,6 @@ function [xopt, fval, exitflag, output] = spbrent(z,pvec,xdir,xvec,fxvec,options
 %
 %
 %    See also SPINTERPLINE, SPOPTIMSET
-	
-% Author : Andreas Klimke
-% Version: 1.0
-% Date   : September 19, 2006
-
-% Change log:
-% V1.0   : September 19, 2006
-%          Initial version
-
-% ------------------------------------------------------------
-% Sparse Grid Interpolation Toolbox
-% Copyright (c) 2006 W. Andreas Klimke, Universitaet Stuttgart 
-% Copyright (c) 2007-2008 W. A. Klimke. All Rights Reserved.
-% See LICENSE.txt for license. 
-% email: klimkeas@ians.uni-stuttgart.de
-% web  : http://www.ians.uni-stuttgart.de/spinterp
-% ------------------------------------------------------------
 
 t0 = clock;
 

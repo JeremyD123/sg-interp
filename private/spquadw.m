@@ -12,25 +12,6 @@ function w = spquadw(n,d,options)
 %
 %    See also SPGRID, SPQUAD, SPDIM.
 	
-% Author : Andreas Klimke
-% Version: 1.1
-% Date   : Sepember 8, 2007
-
-% Change log:
-% V1.0   : September 8, 2007
-%          Initial version
-% V1.1   : November 24, 2007
-%          Added Gauss-Patterson grid
-
-% ------------------------------------------------------------
-% Sparse Grid Interpolation Toolbox
-% Copyright (c) 2006 W. Andreas Klimke, Universitaet Stuttgart 
-% Copyright (c) 2007-2008 W. A. Klimke. All Rights Reserved.
-% See LICENSE.txt for license. 
-% email: klimkeas@ians.uni-stuttgart.de
-% web  : http://www.ians.uni-stuttgart.de/spinterp
-% ------------------------------------------------------------
-	
 if nargin < 3, options = []; end
 if nargin < 2, d = []; end
 

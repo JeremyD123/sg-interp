@@ -11,41 +11,6 @@ function ip = spinterpcc(d,z,y,levelseq,purgedata)
 %    a different domain, the values Y have to be rescaled
 %    accordingly. (Internal function)
 	
-% Author : Andreas Klimke, Universitaet Stuttgart
-% Version: 1.7
-% Date   : February 3, 2006
-
-% Change log:
-% V1.0   : August 12, 2003
-%          Initial release.
-% V1.1   : Sep 11, 2003
-%          Modified input of values to facilitate vectorized 
-%          processing if called similar to a regular function.
-% V1.2   : Sep 15, 2003
-%          Function restores original array shape. 
-% V1.3   : Sep 16, 2003
-%          Added possibility of multiple output variables of the 
-%          function to interpolate. 
-% V1.4   : Sep 17, 2003
-%          Corrected serious bug that gave wrong results for very
-%          low n.
-% V1.5   : Sep 24, 2003
-%          Removed cell processing; this is now done by an external 
-%          routine.
-% V1.6   : January 24, 2006
-%          Changed data types to operate on uint arrays
-% V1.7   : February 3, 2006
-%          Added droptol processing.
-
-% ------------------------------------------------------------
-% Sparse Grid Interpolation Toolbox
-% Copyright (c) 2006 W. Andreas Klimke, Universitaet Stuttgart 
-% Copyright (c) 2007-2008 W. A. Klimke. All Rights Reserved.
-% See LICENSE.txt for license. 
-% email: klimkeas@ians.uni-stuttgart.de
-% web  : http://www.ians.uni-stuttgart.de/spinterp
-% ------------------------------------------------------------
-	
 ninterp = uint32(size(y,1));
 ip = zeros(ninterp,1);
 

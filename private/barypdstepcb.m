@@ -2,31 +2,6 @@ function ip = barypdstepcb(z, allnx, dims, x, y)
 % BARYPDSTEPCB  Step of Barycentric d-dim. Lagrange interpolation,
 %    Chebyshev grid 
 %    (internal function)
-
-% Author : Andreas Klimke, Universitaet Stuttgart
-% Version: 1.2
-% Date   : July 10, 2006
-
-% Change log:
-% V1.0   : Initial release.
-% V1.1   : March 15, 2005
-%          Added checking of dims field containing the dimensions
-%          along which to interpolate (optional field of
-%          z). Removed code parts that refer to a single support
-%          node in the direction; here, interpolation is not
-%          necessary. 
-% V1.2   : July 10, 2006
-%          Added out-of-range checking and skipping of grid value
-%          check.
-
-% ------------------------------------------------------------
-% Sparse Grid Interpolation Toolbox
-% Copyright (c) 2006 W. Andreas Klimke, Universitaet Stuttgart 
-% Copyright (c) 2007-2008 W. A. Klimke. All Rights Reserved.
-% See LICENSE.txt for license. 
-% email: klimkeas@ians.uni-stuttgart.de
-% web  : http://www.ians.uni-stuttgart.de/spinterp
-% ------------------------------------------------------------
 	
 d = uint8(length(allnx));
 

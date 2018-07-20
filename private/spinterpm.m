@@ -9,27 +9,6 @@ function ip = spinterpm(d,z,y,levelseq,purgedata)
 %    the unit cube [0,1]^D, i.e., if the weights have been computed
 %    for a different domain, the values Y have to be rescaled
 %    accordingly. (Internal function)
-	
-% Author : Andreas Klimke, Universitaet Stuttgart
-% Version: 1.2
-% Date   : February 3, 2006
-
-% Change log:
-% V1.0   : September 24, 2003
-%          Initial revision
-% V1.1   : January 24, 2006
-%          Changed data types to operate on uint arrays
-% V1.2   : February 3, 2006
-%          Added droptol processing.
-
-% ------------------------------------------------------------
-% Sparse Grid Interpolation Toolbox
-% Copyright (c) 2006 W. Andreas Klimke, Universitaet Stuttgart 
-% Copyright (c) 2007-2008 W. A. Klimke. All Rights Reserved.
-% See LICENSE.txt for license. 
-% email: klimkeas@ians.uni-stuttgart.de
-% web  : http://www.ians.uni-stuttgart.de/spinterp
-% ------------------------------------------------------------
 
 ninterp = uint32(size(y,1));
 ip = zeros(ninterp,1);

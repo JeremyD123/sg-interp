@@ -4,19 +4,6 @@ function [z,x] = spevalf(method,f,levelseq,d,indicesRange, ...
 % SPEVALF  Evaluate the objective function at grid nodes
 %    (internal function)
 
-% Author : Andreas Klimke, Universitaet Stuttgart
-% Date   : April 20, 2004
-% Version: 1.3
-
-% ------------------------------------------------------------
-% Sparse Grid Interpolation Toolbox
-% Copyright (c) 2006 W. Andreas Klimke, Universitaet Stuttgart 
-% Copyright (c) 2007-2008 W. A. Klimke. All Rights Reserved.
-% See LICENSE.txt for license. 
-% email: klimkeas@ians.uni-stuttgart.de
-% web  : http://www.ians.uni-stuttgart.de/spinterp
-% ------------------------------------------------------------
-
 val = varargin;
 
 if ~isempty(indicesRange)

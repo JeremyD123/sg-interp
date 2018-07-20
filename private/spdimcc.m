@@ -7,19 +7,6 @@ function sp = spdimcc(n, d)
 % The function uses the formulas for N <= 7 given in A. Schreiber:
 % Die Methode von Smoliak bei der multivariaten Interpolation,
 % (2000), p.35/36. 
-	
-% Author : Andreas Klimke, Universitaet Stuttgart
-% Version: 1.0
-% Date   : August 5, 2003
-
-% ------------------------------------------------------------
-% Sparse Grid Interpolation Toolbox
-% Copyright (c) 2006 W. Andreas Klimke, Universitaet Stuttgart 
-% Copyright (c) 2007-2008 W. A. Klimke. All Rights Reserved.
-% See LICENSE.txt for license. 
-% email: klimkeas@ians.uni-stuttgart.de
-% web  : http://www.ians.uni-stuttgart.de/spinterp
-% ------------------------------------------------------------
 
 switch n
  case 0

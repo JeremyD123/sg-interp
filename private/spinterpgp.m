@@ -9,23 +9,6 @@ function ip = spinterpgp(d,z,y,levelseq,purgedata)
 %    the unit cube [0,1]^D, i.e., if the weights have been computed
 %    for a different domain, the values Y have to be rescaled
 %    accordingly. (Internal function)
-	
-% Author : Andreas Klimke
-% Version: 1.0
-% Date   : December 22, 2007
-	
-% Change log:
-% V1.0   : December 22, 2007
-%          Initial release.
-
-% ------------------------------------------------------------
-% Sparse Grid Interpolation Toolbox
-% Copyright (c) 2006 W. Andreas Klimke, Universitaet Stuttgart 
-% Copyright (c) 2007-2008 W. A. Klimke. All Rights Reserved.
-% See LICENSE.txt for license. 
-% email: klimkeas@ians.uni-stuttgart.de
-% web  : http://www.ians.uni-stuttgart.de/spinterp
-% ------------------------------------------------------------
 
 ninterp = uint32(size(y,1));
 ip = zeros(ninterp,1);

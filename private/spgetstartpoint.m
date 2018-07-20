@@ -9,28 +9,6 @@ function [xopt, fval] = spgetstartpoint(z, xbox, options)
 %    SPOPTIMSET to configure this).
 %
 %    See also SPOPTIMSET
-	 
-% Author : Andreas Klimke, Universitaet Stuttgart
-% Version: 1.2
-% Date   : September 1, 2007
-
-% Change log:
-% v1.2 : September 1, 2007
-%        Added calculation of center function value if no grid
-%        point selected.
-% V1.1 : November 4, 2006
-%        Added user-defined start point specification.
-% V1.0 : June 9, 2005
-%      : Initial version.
-
-% ------------------------------------------------------------
-% Sparse Grid Interpolation Toolbox
-% Copyright (c) 2006 W. Andreas Klimke, Universitaet Stuttgart 
-% Copyright (c) 2007-2008 W. A. Klimke. All Rights Reserved.
-% See LICENSE.txt for license. 
-% email: klimkeas@ians.uni-stuttgart.de
-% web  : http://www.ians.uni-stuttgart.de/spinterp
-% ------------------------------------------------------------
 
 if nargin < 3
 	options = [];

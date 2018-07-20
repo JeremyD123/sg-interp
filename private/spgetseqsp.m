@@ -2,22 +2,6 @@ function seq = spgetseqsp(n, d, options)
 % SPGETSEQSP   Get the sequence of index sets in sparse format
 %    (internal function)
 
-% Author : Andreas Klimke
-% Date   : November 18, 2007
-% Version: 1.1
-
-% V1.1   : November 18, 2007
-%          Added new grid type : Gauss-Patterson
-
-% ------------------------------------------------------------
-% Sparse Grid Interpolation Toolbox
-% Copyright (c) 2006 W. Andreas Klimke, Universitaet Stuttgart 
-% Copyright (c) 2007-2008 W. A. Klimke. All Rights Reserved.
-% See LICENSE.txt for license. 
-% email: klimkeas@ians.uni-stuttgart.de
-% web  : http://www.ians.uni-stuttgart.de/spinterp
-% ------------------------------------------------------------
-
 n = uint8(n);
 d = uint16(d);
 

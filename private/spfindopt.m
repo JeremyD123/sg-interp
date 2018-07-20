@@ -1,37 +1,6 @@
 function [xopt, fval] = spfindopt(z, xbox, isminimize, ismaximize)
 % SPFINTOPT   Compute the extrema over the sparse grid points for
 % the box XBOX
-	 
-% Author : Andreas Klimke, Universitaet Stuttgart
-% Version: 1.5
-% Date   : May 14, 2008
-
-% Change log:
-% V1.0 : February 18, 2004
-%      : Initial version.
-% V1.1 : September 6, 2004
-%        Added capability for handling dimension-adaptive data.
-% V1.2 : June 9, 2005
-%        Added z.indices.currentindex = 1 statement to handle
-%        sparse indices arrays correctly.
-% V1.3 : August 1, 2005
-%        Corrected bug; Stored function values were not used
-%        if grid was not stored due to wrong placement of if
-%        statement.
-% V1.4 : September 1, 2007
-%        Fixed bug in cropping (used and instead of or).
-% V1.5 : May 14, 2008
-%        Fixed bug in cropping (added tolerance, fixed indices
-%        range).
-
-% ------------------------------------------------------------
-% Sparse Grid Interpolation Toolbox
-% Copyright (c) 2006 W. Andreas Klimke, Universitaet Stuttgart 
-% Copyright (c) 2007-2008 W. A. Klimke. All Rights Reserved.
-% See LICENSE.txt for license. 
-% email: klimkeas@ians.uni-stuttgart.de
-% web  : http://www.ians.uni-stuttgart.de/spinterp
-% ------------------------------------------------------------
 
 if nargin < 3;
   isminimize = 1;

@@ -2,27 +2,6 @@ function ip = spcmpvalscb(d,z,y,newlevelseq,levelseq)
 % SPCMPVALSCB   Compute hierarchical surpluses, Chebyshev-grid
 %    (internal function)
 
-% Author : Andreas Klimke, Universitaet Stuttgart
-% Version: 1.1
-% Date   : January 24, 2006
-	
-% Change log:
-% V1.0   : July 6, 2004
-%          Initial release.
-% V1.1   : January 24, 2006
-%          Changed data types to operate on uint arrays. Corrected
-%          Bug with nnewpoints array definition error, see
-%          spcmpvalscc.m
-
-% ------------------------------------------------------------
-% Sparse Grid Interpolation Toolbox
-% Copyright (c) 2006 W. Andreas Klimke, Universitaet Stuttgart 
-% Copyright (c) 2007-2008 W. A. Klimke. All Rights Reserved.
-% See LICENSE.txt for license. 
-% email: klimkeas@ians.uni-stuttgart.de
-% web  : http://www.ians.uni-stuttgart.de/spinterp
-% ------------------------------------------------------------
-
 ninterp = uint32(size(y,1));
 ip = zeros(ninterp,1);
 

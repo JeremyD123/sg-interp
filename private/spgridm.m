@@ -6,27 +6,6 @@ function x = spgridm(levelseq)
 %    the matrix X. One row of matrix X represents one grid point.
 %    (Internal function)
 
-% Author : Andreas Klimke, Universitaet Stuttgart
-% Version: 1.2
-% Date   : January 24, 2006
-	
-% Change log:
-% V1.0   : Sep 24, 2003
-% V1.1   : April 21, 2004
-%          Altered function header to enable dimension-adaptive
-%          grids. Simplified code.
-% V1.2   : January 24, 2006
-%          Changed data types to operate on uint arrays
-
-% ------------------------------------------------------------
-% Sparse Grid Interpolation Toolbox
-% Copyright (c) 2006 W. Andreas Klimke, Universitaet Stuttgart 
-% Copyright (c) 2007-2008 W. A. Klimke. All Rights Reserved.
-% See LICENSE.txt for license. 
-% email: klimkeas@ians.uni-stuttgart.de
-% web  : http://www.ians.uni-stuttgart.de/spinterp
-% ------------------------------------------------------------
-
 % Get the number of levels
 nlevels = uint32(size(levelseq,1));
 

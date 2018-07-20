@@ -2,25 +2,6 @@ function ip = spcmpvalsccsp(d,z,y,seq,fromindex,toindex)
 % SPCMPVALSCCSP   Compute surpluses, Clenshaw-C. grid, sparse indices
 %    (internal function)
 
-% Author : Andreas Klimke, Universitaet Stuttgart
-% Version: 1.1
-% Date   : March 28, 2005
-	
-% Change log:
-% V1.0   : March 4, 2005 
-%          Initial release.
-% V1.1   : March 28, 2005
-%          Added indirect addressing of forward neighbor arrays.
-
-% ------------------------------------------------------------
-% Sparse Grid Interpolation Toolbox
-% Copyright (c) 2006 W. Andreas Klimke, Universitaet Stuttgart 
-% Copyright (c) 2007-2008 W. A. Klimke. All Rights Reserved.
-% See LICENSE.txt for license. 
-% email: klimkeas@ians.uni-stuttgart.de
-% web  : http://www.ians.uni-stuttgart.de/spinterp
-% ------------------------------------------------------------
-
 % Allocate memory for the resulting surpluses
 ninterp = size(y,1);
 ip = zeros(ninterp,1);

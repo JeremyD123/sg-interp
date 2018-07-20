@@ -4,66 +4,6 @@ function z = spadaptvals(f, d, range, options, varargin)
 % dimension-adaptive sparse grids. The calling options are identical 
 % to SPVALS (internal function).
 
-% Author : Andreas Klimke, Universitaet Stuttgart
-% Version: 2.3
-% Date   : April 10, 2008
-
-% Change log:
-% V1.0   : April 22, 2004
-%          Initial version
-% V1.1   : January 12, 2005
-%          Corrected computation of relative estimated error;
-%          Removed storing of Grel and Gabs, not required.
-% V1.2   : March 28, 2005
-%          Completely revised version using sparse index arrays.
-% V1.3   : April 16, 2005
-%          Corrected serious bug incolving correct value of nbid.
-% V1.4   : May 23, 2005
-%          Corrected bug involving memory allocation of forward
-%          neighbor array (used maxind instead of maxforwardind in
-%          new size calculation). Corrected bug in memory
-%          allocation concerning maxind variable (used wrong
-%          length). 
-% V1.5   : August 11, 2005
-%          Corrected bug involving addr variable which was used
-%          twice in a different context. Changed one to tmpaddr
-% V1.6   : September 02, 2005
-%          Altered structure assignment to avoid warning in new 
-%          Matlab release R14SP2. 
-% V1.7   : December 30, 2005
-%          Removed serious bug that occurred in higher dimensions
-%          resulting from a false re-ordering result from 
-%          sortheap and popheap. The reason for this was the mixing
-%          of double and uint32 data types (popheap.m and pushheap.m
-%          were not written to get uint32 type arguments).
-% V1.8   : January 23, 2006
-%          Removed bug: Set dimadaptDegree to 0.9, as described in
-%          the documentation.
-% V1.9   : June 7, 2006
-%          Updated warning message to be more meaningful
-% V2.0   : September 30, 2007
-%          Improved allocation of grid point array to allow 
-%          dimensions up to d = 65534.
-% V2.1   : December 15, 2007
-%          Fixed bug with levels vector not being cleared
-%          Added handling of Gauss-Patterson grid
-%          Added enforcement of maximum depth
-% V2.2   : January 20, 2008
-%          Added points strategy for measuring degree of dimensional
-%          adaptivity. 
-% V2.3   : April 10, 2008
-%          Fixed Out of range value or NaN computed in integer arithmetic
-%          warning occurring in Matlab v7.4.0.287, R2007a.
-
-% ------------------------------------------------------------
-% Sparse Grid Interpolation Toolbox
-% Copyright (c) 2006 W. Andreas Klimke, Universitaet Stuttgart 
-% Copyright (c) 2007-2008 W. A. Klimke. All Rights Reserved.
-% See LICENSE.txt for license. 
-% email: klimkeas@ians.uni-stuttgart.de
-% web  : http://www.ians.uni-stuttgart.de/spinterp
-% ------------------------------------------------------------
-
 % CONSTANTS
 RESIZE_FACTOR = 1.5;
 MAX_X_SIZE = 1e7;

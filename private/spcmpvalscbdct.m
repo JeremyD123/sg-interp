@@ -3,23 +3,6 @@ function ip = spcmpvalscbdct(d,z,y,newlevelseq,levelseq)
 %    does the same as SPCMPVALSCB
 %    (internal function)
 
-% Author : Andreas Klimke, Universitaet Stuttgart
-% Version: 1.0
-% Date   : February 10, 2006
-	
-% Change log:
-% V1.0   : February 10, 2006
-%          Initial release.
-
-% ------------------------------------------------------------
-% Sparse Grid Interpolation Toolbox
-% Copyright (c) 2006 W. Andreas Klimke, Universitaet Stuttgart 
-% Copyright (c) 2007-2008 W. A. Klimke. All Rights Reserved.
-% See LICENSE.txt for license. 
-% email: klimkeas@ians.uni-stuttgart.de
-% web  : http://www.ians.uni-stuttgart.de/spinterp
-% ------------------------------------------------------------
-
 ninterp = uint32(size(y,1));
 ip = zeros(ninterp,1);
 

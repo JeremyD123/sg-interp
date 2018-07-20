@@ -15,19 +15,6 @@ function [sp, spmatrix] = spdimm(maxn, maxd, boundary)
 % dreidimensionalen Poisson-Gleichung", Hans-Joachim Bungartz,
 % 1992.
 	
-% Author : Andreas Klimke, Universitaet Stuttgart
-% Version: 1.0
-% Date   : July 29, 2003
-
-% ------------------------------------------------------------
-% Sparse Grid Interpolation Toolbox
-% Copyright (c) 2006 W. Andreas Klimke, Universitaet Stuttgart 
-% Copyright (c) 2007-2008 W. A. Klimke. All Rights Reserved.
-% See LICENSE.txt for license. 
-% email: klimkeas@ians.uni-stuttgart.de
-% web  : http://www.ians.uni-stuttgart.de/spinterp
-% ------------------------------------------------------------
-	
 if nargin < 3
 	boundary = [];
 end
